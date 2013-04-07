@@ -1,1 +1,5 @@
-require 'box-cutter/railtie' if defined? Rails
+if defined? Rails
+  class Engine < Rails::Engine
+  end
+  require 'box-cutter/railtie'
+end

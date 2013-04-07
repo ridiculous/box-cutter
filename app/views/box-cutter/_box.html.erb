@@ -1,16 +1,14 @@
 <div class="<%= "span#{span}" if defined? span %> <%= "offset#{offset}" if defined? offset %>" <%= 'data-spy=affix' if defined? affix and affix %>>
   <div class="box<%= " box-#{color}" if defined? color %><%= " #{klass}" if defined? klass %>">
-    <% if header.any?(&:filled?) %>
-        <div class="tab-header">
-          <%= header[:text] %>
-          <div class="pull-right tab-header-right">
-            <div class="space-right actions">
-              <%= header[:extra] if defined? header[:extra] %>
-            </div>
-            <%= link_to iw('icon-caret-down'), 'javascript: return false;', class: 'box-toggle' if defined? toggle and toggle %>
-          </div>
+    <div class="tab-header">
+      <%= header[:text] %>
+      <div class="pull-right tab-header-right">
+        <div class="space-right actions">
+          <%= header[:extra] if defined? header[:extra] %>
         </div>
-    <% end %>
+        <%= link_to iw('icon-caret-down'), 'javascript: return false;', class: 'box-toggle' if defined? toggle and toggle %>
+      </div>
+    </div>
     <div class="box-content padded<%= padding %>">
       <%= my_block %>
     </div>
