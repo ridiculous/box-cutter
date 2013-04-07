@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Ryan Buckley"]
   gem.email         = ["arebuckley@gmail.com"]
   gem.description   = %q{helper methods for creating boxes}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.summary       = %q{Helper methods for creating boxes}
   gem.homepage      = ''
 
   gem.files         = `git ls-files`.split($\)
