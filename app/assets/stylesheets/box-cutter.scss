@@ -209,6 +209,7 @@ td.actions a:hover, td.action:hover {
   a {
     color: $color;
     border-bottom: 1px dotted $color;
+    text-decoration: none;
 
     &:hover {
       background-color: transparent;
@@ -277,7 +278,7 @@ td.actions a:hover, td.action:hover {
   $green: #55a02a;
   line-height: 32px;
   height: 32px;
-  padding-left: 15px;
+  padding: 0 15px;
   font-size: 14px;
   color: #fff;
   font-weight: bold;
@@ -391,10 +392,6 @@ td.actions a:hover, td.action:hover {
   @include box(#940007);
 }
 
-.tab-header-right {
-  padding-top: 4px;
-}
-
 .padded20 {
   padding: 20px;
 }
@@ -425,4 +422,8 @@ td.actions a:hover, td.action:hover {
 
 .pull-right {
   float: right;
+}
+
+.tab-header-right a {
+  font-size: 14px;
 }
