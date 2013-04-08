@@ -1,49 +1,6 @@
-/*!
-* Custom styles and enhancements to the base bootstrap theme
-*/
-body {
-  /*background-color: #4F993C;*/
-  padding-top: 60px;
-}
-
-form.sign-in {
-  margin: 0;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
-  background-image: url("/assets/glyphs/glyphicons-halflings.png");
-}
-
-/* White icons with optional class, or on hover/active states of certain elements */
-.icon-white,
-.nav-pills > .active > a > [class^="icon-"],
-.nav-pills > .active > a > [class*=" icon-"],
-.nav-list > .active > a > [class^="icon-"],
-.nav-list > .active > a > [class*=" icon-"],
-.navbar-inverse .nav > .active > a > [class^="icon-"],
-.navbar-inverse .nav > .active > a > [class*=" icon-"],
-.dropdown-menu > li > a:hover > [class^="icon-"],
-.dropdown-menu > li > a:hover > [class*=" icon-"],
-.dropdown-menu > .active > a > [class^="icon-"],
-.dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-submenu:hover > a > [class^="icon-"],
-.dropdown-submenu:hover > a > [class*=" icon-"] {
-  background-image: url("/assets/glyphs/glyphicons-halflings-white.png");
-}
-
 .well.compact {
   padding-top: 0;
   padding-bottom: 0;
-}
-
-.post {
-  margin-bottom: 50px;
-}
-
-.post-sub {
-  margin: -15px 0 20px 0;
-  color: #AAA;
 }
 
 .well-light {
@@ -86,10 +43,6 @@ form.sign-in {
 
 .centered-block {
   margin: 0 auto;
-}
-
-.pad-left {
-  padding-left: 20px;
 }
 
 hr {
@@ -458,46 +411,14 @@ td.actions a:hover, td.action:hover {
   background-color: transparent;
 }
 
-th a {
-  color: #000;;
-}
-
 .tip-top {
   cursor: pointer;
-}
-
-.table-hover tbody tr:hover td,
-.table-hover tbody tr:hover th {
-  background-color: #ffffd1;
-}
-
-.table-compact {
-  margin-bottom: 0;
 }
 
 .qtip2-content {
   display: none;
 }
 
-.essay-score {
-  .section {
-    background-color: #EEE;
-    label {
-      font-weight: bold;
-    }
-  }
-}
-
-.prettyradio {
-  a {
-    border-bottom: 0 !important;
-  }
-}
-
-.breadcrumb-green {
-  background-color: lighten(#5d2b88, 55%);
-  color: #5d2b88;
-  .divider {
-    color: #5d2b88;
-  }
+.box .ml5 {
+  margin-left: 5px;
 }

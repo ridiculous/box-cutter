@@ -1,16 +1,17 @@
-<div class="<%= "span#{span}" if defined? span %> <%= "offset#{offset}" if defined? offset %>" <%= 'data-spy=affix' if defined? affix and affix %>>
-  <div class="box<%= " box-#{color}" if defined? color %><%= " #{klass}" if defined? klass %>">
-    <div class="tab-header">
-      <%= header[:text] %>
-      <div class="pull-right tab-header-right">
-        <div class="space-right actions">
-          <%= header[:extra] if defined? header[:extra] %>
+<%= content_tag(:div, class: "#{span}#{offset}") do %>
+    <%= content_tag(:div, class: "box #{color}#{klass}") do %>
+        <div class="tab-header">
+          <%= title %>
+          <div class="pull-right tab-header-right">
+            <%= links.each do |my_link| %>
+                <div class="space-right actions">
+                  <%= link_to(my_link[0], my_link[1], {class: 'ml5'}.merge(my_link[2] || {})) %>
+                </div>
+            <% end %>
+          </div>
         </div>
-        <%= link_to iw('icon-caret-down'), 'javascript: return false;', class: 'box-toggle' if defined? toggle and toggle %>
-      </div>
-    </div>
-    <div class="box-content padded<%= padding %>">
-      <%= my_block %>
-    </div>
-  </div>
-</div>
+        <%= content_tag(:div, class: "box-content padded#{padding}") do %>
+            <%= my_block %>
+        <% end %>
+    <% end %>
+<% end %>
