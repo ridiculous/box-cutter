@@ -3,12 +3,13 @@ module BoxCutter
     def box(options, &block)
       options = {
           title: '',
+          if: true,
           span: nil,
-          offset: nil,
+          class: nil,
           color: nil,
+          offset: nil,
           padding: 20,
           links: [],
-          if: true,
           my_block: capture(&block)
       }.merge(options)
 
@@ -16,6 +17,7 @@ module BoxCutter
       options[:offset].insert(0, 'offset') if options[:offset]
       options[:color].insert(0, 'box-') if options[:color]
       options[:links] = [options[:links]] if options[:links] && !options[:links][0].is_a?(Array)
+      options[:klass] = options.delete(:class)
 
       if options.delete(:if)
         render(partial: 'box-cutter/box', locals: options)
