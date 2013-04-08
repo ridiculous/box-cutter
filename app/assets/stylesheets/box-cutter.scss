@@ -259,6 +259,7 @@ td.actions a:hover, td.action:hover {
   a {
     color: black;
     border-bottom: 1px dotted black;
+    text-decoration: none;
 
     &:hover {
       background-color: transparent;
