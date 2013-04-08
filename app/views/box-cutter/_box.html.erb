@@ -3,11 +3,11 @@
         <div class="tab-header">
           <%= title %>
           <div class="pull-right tab-header-right">
-            <% links.each do |my_link| %>
-                <div class="space-right actions">
+            <div class="space-right actions">
+              <% links.each do |my_link| %>
                   <%= link_to(my_link[0], my_link[1], {class: 'ml5'}.merge(my_link[2] || {})) %>
-                </div>
-            <% end %>
+              <% end %>
+            </div>
           </div>
         </div>
         <%= content_tag(:div, class: "box-content padded#{padding}") do %>
