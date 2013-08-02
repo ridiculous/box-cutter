@@ -1,6 +1,11 @@
-# Box::Cutter
+# Box Cutter
 
-Adds a `box` helper method to your views. Comes complete with styles and options for any occasion!
+Adds a `box` helper method to your views. Comes complete with styles and options for any occasion! 
+
+## Requirements 
+
+* >= Rails 3
+* >= Ruby 1.9
 
 ## Installation
 
