@@ -1,6 +1,6 @@
 # Box::Cutter
 
-TODO: Write a gem description
+Adds a `box` helper method to your views. Comes complete with styles and options for any occassion!
 
 ## Installation
 
