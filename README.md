@@ -1,6 +1,6 @@
 # Box::Cutter
 
-Adds a `box` helper method to your views. Comes complete with styles and options for any occassion!
+Adds a `box` helper method to your views. Comes complete with styles and options for any occasion!
 
 ## Installation
 
