@@ -6,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'box-cutter'
+    gem 'box-cutter', git: 'https://github.com/ridiculous/box-cutter'
 
 And then execute:
 
@@ -18,7 +18,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+No bootstrap required, just add the styesheet to application.css:
+    
+    require box-cutter
+    
+Now your ready to use it in your views:
+
+    <%= box(title: 'Welcome') do %>
+        # ...
+    <% end %>
+    
+Options:
+
+    title: '',   # Title for the box
+    if: true,    # Conditionally show the box
+    span: nil,   # N/A unless you include Twitter Bootstraps .span* classes
+    class: nil,  # Custom CSS classes
+    color: nil,  # We have purple, dark-purple, green, dark-green, white, blue, dark-blue, red, dark-red
+    offset: nil, # 
+    padding: 20, # Padding for box
+    links: []    # Array of arrays: [['Home', root_path], ['Logout', logout_path]]
 
 ## Contributing
 
