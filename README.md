@@ -32,6 +32,10 @@ Now your ready to use it in your views:
     <%= box(title: 'Welcome') do %>
         # ...
     <% end %>
+
+Or, you can just use it as a box by passing no title (or options):
+
+    <%= box { 'Time to block out' } %>
     
 Options:
 
