@@ -43,7 +43,7 @@ Options:
     if: true,    # Conditionally show the box
     span: nil,   # N/A unless you include Twitter Bootstraps .span* classes
     class: nil,  # Custom CSS classes
-    color: nil,  # We have purple, dark-purple, green, dark-green, white, blue, dark-blue, red, dark-red
+    color: nil,  # We have grey, purple, dark-purple, green, dark-green, white, blue, dark-blue, red, dark-red
     offset: nil, # 
     padding: 20, # Padding for box
     links: []    # Array of arrays: [['Home', root_path], ['Logout', logout_path]]
